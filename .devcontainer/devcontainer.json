@@ -1,0 +1,21 @@
+{
+
+        "name": "CSE Exibit OCaml Workshop",
+        "build": {
+          "dockerfile": "../dev/Dockerfile",
+          "context": ".."
+        },
+        "userEnvProbe": "loginInteractiveShell",
+        "customizations": {
+                "vscode": {
+                        "extensions": [
+                                "ocamllabs.ocaml-platform"
+                        ]
+                }
+        },
+        "hostRequirements": {
+        "cpus": 4,
+        "memory": "2gb",
+        "storage": "8gb"
+        }
+}
